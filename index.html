@@ -5,6 +5,14 @@
 		<title>这是一个html学习页面</title>
 		<style>
 
+			p {
+				font-size: 20px;
+				font-weight: bold;
+				font-style: italic;
+				/*opacity 设置 div 元素的不透明级别：*/
+/*				opacity: 0.4;*/
+			}
+			
 			/*element selector*/
 			h1,h2,big {
 				color: blue;
@@ -14,9 +22,45 @@
 			/*class selector 使用class = ".后面的名字"*/
 			.red {
 				color: red;
+				text-align: right;
 			}
 			
+			/* id selector 单一元素使用 */
+			#horizontalLine {
+				color: yellow;
+			}
+			
+			.yellow {
+				color: yellow;
+			}
+			
+			
 			.blue {
+				color: blue;
+			}
+			
+			p.big {
+				color: darkblue;
+			}
+			
+			/* 每个artical标签有一个直接子标签p */
+			article > p {
+				color: red;
+			}
+			
+			/*每个articlebiaoqian下面的所有p子标签,无论是不是直接子标签*/
+			article p {
+				font-size: 12px;
+			}
+			
+			/*每个在colored定义的标签下的任何层级的p标签*/
+
+			.colored p {
+				color: blue;
+			}
+			
+			/*每个colored的直接子元素artical*/ 
+			article > .colored {
 				color: blue;
 			}
 			
@@ -30,9 +74,9 @@
 		<h4>This is a heading</h4>
 		<h5>This is a heading</h5>
 		<h6>This is a heading</h6>
-		<hr />
+		<hr id="horizontalLine"/>
 		<!--HTML 段落是通过 <p> 标签进行定义的。-->
-		<p>This is a paragraph.</p>
+		<p class="big">This is a paragraph.</p>
 		<p>This is another paragraph.</p>
 		<!--HTML 链接是通过 <a> 标签进行定义的。-->
 		<a href="http://www.baidu.com">百度</a>
@@ -48,8 +92,9 @@
 		<p>属性和属性值建议使用小写，始终为属性值加引号</p>
 		<p>HTML中所有连续的空格或空行都会被算作一个空格</p>
 		<hr />
+
 		<p>文本格式化</p>
-		<b>This text is bold</b>
+		<b id="horizontalLine">This text is bold</b>
 		<br />
 		<strong>This text is strong</strong>
 		<br />
@@ -126,6 +171,15 @@
 				<p>div 处理</p>
 			<hr />
 		</div>
+		
+		<p id="horizontalLine">我用了id的属性</p>
+		<hr />
+		<article>
+			<p> 我是在artical 下的直接p标签</p>
+			<div>
+				<p> 我是在artical 下的非直接p标签</p>
+			</div>
+		</article>
 	</body>
 </html>
 
