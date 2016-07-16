@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Two Column Design</title>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+			div {
+				/*background-color: #00ffff;*/
+			}
+			p {
+				width: 50%;
+				/*border: 1px solid black;*/
+				padding: 10px;
+				float: left;
+			}
+			
+			#p1 {
+				/*background-color: #A52A2A;*/
+
+			}
+			#p2 {
+				/*background-color: #DEB887;*/
+			}
+			
+			section {
+				clear: both;
+			}
+			
+			h1 {
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Two Column Design</h1>
+		
+		<div>
+			<p id="p1">
+				Older webkit browsers also support the unofficial intrinsic value which acts the same as max-content.
+				MS Edge status: Under Consideration
+				1 Does not support for height/min-height/max-height property, only width. see test case Firefox bug
+				2 Firefox currently supports the "-moz-available" property rather than "-moz-fill".
+				3 Does not support for "flex-basis" property. see specs. 
+				Blink bug,Firefox bug
+			</p>
+			<p id="p2">
+				Since around 2012 Caniuse has been accepting suggestions for support tables to add to the site via Google Moderator. 
+				As Google has recently announced that the Moderator service will be shut down, all suggestions with 3+ votes have now been imported as GitHub issues.
+				While GitHub lacks a direct way of voting issues up or down, a system has been set up where anyone can vote for an issue with a "+1" comment. 
+				These votes are then tallied and the resulting list in order of votes is generated here.
+			</p>
+			
+			<section>
+				This is regular content continuing after the paragraph boxes.
+			</section>
+		</div>
+	</body>
+</html>
