@@ -1,4 +1,13 @@
 body {
-	background: yellow;
-	font-size: 130%;
+	/*background: yellow;*/
+	/*font-size: 130%;*/
+}
+
+.row {
+	margin-bottom: 15px;
+}
+
+.row > div {
+	border: 2px solid red;
+	background-color: gray;
 }
