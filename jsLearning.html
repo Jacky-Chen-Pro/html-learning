@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/script.js"></script>
+		<script>
+			console.log(x);
+			console.log(y);
+			
+			function a() {
+				console.log("I am the console in the function");
+			}
+			
+			function compare(x,y) {
+				return x>y;	
+			}
+		</script>
+		<style>
+			h1 {
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<h1> Javascript Lesson</h1>
+
+		<script>
+			console.log("This js log is in body!")
+			a();
+			console.log("The result of the compare:" + compare(2,3));
+			
+			var a = compare(4, "a");
+			compare();
+		</script>		
+		<script src="js/script.js"/>
+	</body>
+</html>
